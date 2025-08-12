@@ -1,0 +1,273 @@
+.login_main_wrapper {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url("https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1350&q=80")
+    no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  z-index: 1;
+  color: #fff;
+  font-family: "Arial", sans-serif;
+  text-align: center;
+}
+.loginLoginBox {
+  position: relative;
+  width: 400px;
+  padding: 40px;
+  margin: 20px auto;
+  background: rgba(0, 0, 0, 0.9);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+}
+
+.loginLoginHead {
+  margin: 0 0 30px;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.loginUserBox {
+  position: relative;
+  justify-content: center;
+}
+
+.loginUserBox input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #d65b3c;
+  outline: none;
+  background: transparent;
+}
+
+/* Override autofill styles */
+.loginUserBox input:-webkit-autofill,
+.loginUserBox input:-webkit-autofill:hover,
+.loginUserBox input:-webkit-autofill:focus,
+.loginUserBox input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px transparent inset !important;
+  -webkit-text-fill-color: #fff !important;
+  background: transparent !important;
+  border-bottom: 1px solid #d65b3c !important;
+  transition: background-color 5000s ease-in-out 0s; /* Prevents background color change */
+}
+
+.loginUserBox label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.loginUserBox input:focus ~ label,
+.loginUserBox input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #fff;
+  font-size: 12px;
+}
+
+.loginSubmitButton {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  font-weight: bold;
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: 0.5s;
+  margin-top: 40px;
+  letter-spacing: 3px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.loginSubmitButton:hover {
+  background: #d65b3c;
+  color: #272727;
+  border-radius: 5px;
+}
+
+.loginSubmitButton span {
+  position: absolute;
+  display: block;
+}
+
+.loginSubmitButton span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #d65b3c);
+  animation: btn-anim1 1.5s linear infinite;
+}
+
+@keyframes btn-anim1 {
+  0% {
+    left: -100%;
+  }
+  50%,
+  100% {
+    left: 100%;
+  }
+}
+
+.loginSubmitButton span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #d65b3c);
+  animation: btn-anim2 1.5s linear infinite;
+  animation-delay: 0.375s;
+}
+
+@keyframes btn-anim2 {
+  0% {
+    top: -100%;
+  }
+  50%,
+  100% {
+    top: 100%;
+  }
+}
+
+.loginSubmitButton span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #d65b3c);
+  animation: btn-anim3 1.5s linear infinite;
+  animation-delay: 0.75s;
+}
+
+@keyframes btn-anim3 {
+  0% {
+    right: -100%;
+  }
+  50%,
+  100% {
+    right: 100%;
+  }
+}
+
+.loginSubmitButton span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #d65b3c);
+  animation: btn-anim4 1.5s linear infinite;
+  animation-delay: 1.125s;
+}
+
+@keyframes btn-anim4 {
+  0% {
+    bottom: -100%;
+  }
+  50%,
+  100% {
+    bottom: 100%;
+  }
+}
+
+.loginEyeIcon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .loginLoginBox {
+    width: 350px;
+    padding: 30px;
+  }
+
+  .loginLoginHead {
+    font-size: 1.3rem;
+    margin-bottom: 25px;
+  }
+
+  .loginUserBox input {
+    font-size: 14px;
+    padding: 8px 0;
+    margin-bottom: 25px;
+  }
+
+  .loginUserBox label {
+    font-size: 14px;
+    padding: 8px 0;
+  }
+
+  .loginUserBox input:focus ~ label,
+  .loginUserBox input:valid ~ label {
+    top: -18px;
+    font-size: 10px;
+  }
+
+  .loginSubmitButton {
+    padding: 8px 16px;
+    font-size: 14px;
+    margin-top: 30px;
+    letter-spacing: 2px;
+  }
+}
+
+@media (max-width: 480px) {
+  .loginLoginBox {
+    width: 90%;
+    padding: 20px;
+    margin: 10px auto;
+  }
+
+  .loginLoginHead {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+
+  .loginUserBox input {
+    font-size: 13px;
+    padding: 6px 0;
+    margin-bottom: 20px;
+  }
+
+  .loginUserBox label {
+    font-size: 13px;
+    padding: 6px 0;
+  }
+
+  .loginUserBox input:focus ~ label,
+  .loginUserBox input:valid ~ label {
+    top: -16px;
+    font-size: 9px;
+  }
+
+  .loginSubmitButton {
+    padding: 6px 12px;
+    font-size: 13px;
+    margin-top: 20px;
+    letter-spacing: 1px;
+  }
+}

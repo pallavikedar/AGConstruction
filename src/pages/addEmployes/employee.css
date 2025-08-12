@@ -1,0 +1,13 @@
+.admin_registration_button {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 35px;
+}
+.add_supervisor {
+  padding: 15px 25px;
+  background-color: #e05f2c;
+  border-radius: 10px;
+  color: white;
+  font-weight: 700;
+  border: none;
+}

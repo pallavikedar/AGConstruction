@@ -1,0 +1,362 @@
+.supervisor_back_button {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    /* margin-left: 550px; */
+}
+.supervisor_back_button button {
+    height: 40px;
+    width: 120px;
+    border-radius: 10px;
+    border: none;
+    background-color: #ddd;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.app_user_registration_form_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* min-height: 85vh; */
+    background-color: #f9f9f9;
+    /* padding: 20px; */
+}
+.app_user_registration_form {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    /* max-width: 400px; */
+}
+
+.app_user_registration_form_label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+.app_user_registration_form_input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.app_user_registration_form_input:focus {
+    border-color: #ff5500;
+    outline: none;
+    box-shadow: 0 0 4px rgba(255, 98, 0, 0.3);
+}
+
+.app_user_registration_form_submit_button {
+    width: 100%;
+    padding: 10px;
+    background-color: #e34004;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.app_user_registration_form_submit_button:hover {
+    background-color: #bc2d02;
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+    .app_user_registration_form {
+        padding: 15px;
+    }
+
+    .app_user_registration_form_input {
+        font-size: 13px;
+    }
+
+    .app_user_registration_form_submit_button {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .supervisor_back_button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 179px;
+        margin-top: 15px;
+    }
+
+    .supervisor_back_button button {
+        height: 20px;
+        width: 80px;
+        font-size: 12px;
+    }
+
+    .app_user_registration_form_wrapper {
+        padding: 10px;
+    }
+
+    .app_user_registration_form {
+        padding: 10px;
+    }
+
+    .app_user_registration_form_input {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .app_user_registration_form_submit_button {
+        font-size: 13px;
+        padding: 8px;
+    }
+}
+
+/* super visor table */
+.add_supervisor_button {
+    height: 40px;
+    width: 130px;
+    border: none;
+    background-color: #0dada5;
+    color: white;
+    font-size: 15px;
+    border-radius: 10px;
+}
+
+.supervisor_table_wrapper {
+    width: 100%;
+    overflow-x: auto;
+    margin: 20px 0;
+    padding: 10px;
+}
+
+.supervisor_table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+}
+
+.supervisor_table_thead {
+    background-color: #fdf3e3;
+    color: rgb(228, 80, 0);
+}
+
+.supervisor_table th,
+.supervisor_table td {
+    padding: 10px 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.supervisor_table th {
+    font-weight: bold;
+}
+
+.supervisor_table_tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.supervisor_table_tbody tr:hover {
+    background-color: #e0e0e0;
+}
+
+.supervisor_table ul {
+    padding-left: 20px;
+    margin: 0;
+    list-style-type: disc;
+}
+
+.supervisor_table li {
+    margin-bottom: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+    .supervisor_table th,
+    .supervisor_table td {
+        padding: 8px 10px;
+        font-size: 12px;
+    }
+
+    .supervisor_table ul {
+        padding-left: 15px;
+    }
+
+    .add_supervisor_button {
+        height: 35px;
+        width: 99px;
+        border: none;
+        background-color: #0dada5;
+        color: white;
+        font-size: 12px;
+        border-radius: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .supervisor_table_wrapper {
+        margin: 10px 0;
+    }
+
+    .supervisor_table th,
+    .supervisor_table td {
+        padding: 6px 8px;
+        font-size: 11px;
+    }
+
+    .supervisor_table ul {
+        padding-left: 10px;
+    }
+
+    .add_supervisor_button {
+        height: 30px;
+        width: 99px;
+        border: none;
+        background-color: #0dada5;
+        color: white;
+        font-size: 12px;
+        border-radius: 10px;
+    }
+}
+
+/* add site css */
+
+.selct_site_dropdown_conatiner {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    background-color: #fffbeb;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    width: 90%;
+    max-width: 420px;
+    padding: 25px;
+    text-align: center;
+    box-sizing: border-box;
+    border: 2px solid #f6c90e;
+}
+
+
+.selct_site_dropdown_conatiner_close_button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.selct_site_dropdown_conatiner_close_button:hover {
+    color: #e74c3c;
+}
+
+.selct_site_dropdown_heading {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.selct_site_dropdown_select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #333;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+.selct_site_dropdown_select:focus {
+    border-color: #db6334;
+    outline: none;
+}
+
+.selct_site_dropdown_submit_button {
+    padding: 10px 20px;
+    background-color: #db7134;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+.selct_site_dropdown_submit_button:hover {
+    background-color: #b95229;
+}
+
+@media (max-width: 768px) {
+    .selct_site_dropdown_conatiner {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .selct_site_dropdown_heading {
+        font-size: 16px;
+    }
+
+    .selct_site_dropdown_select,
+    .selct_site_dropdown_submit_button {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .selct_site_dropdown_conatiner {
+        width: 95%;
+    }
+
+    .selct_site_dropdown_heading {
+        font-size: 14px;
+    }
+}
+
+.alloted_site_button{
+    height: 35px;
+    width: 100px;
+    background-color: #db6c34;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+.remove_site_button{
+    height: 35px;
+    width: 100px;
+    background-color: #db3434;
+    border: none;
+    border-radius: 5px;
+    color: white;  
+    margin-left: 5px;
+}
+.delete_supervisor_button{
+    height: 35px;
+    width: 100px;
+    background-color: rgb(255, 55, 0);
+    border: none;
+    border-radius: 5px;
+    color: white;  
+    margin-left: 5px;
+}

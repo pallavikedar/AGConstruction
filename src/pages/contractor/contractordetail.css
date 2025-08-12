@@ -1,0 +1,510 @@
+.contractor-container {
+  /* text-align: center; */
+  padding: 20px;
+}
+.contractor_search {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 5px 10px;
+  width: 100%;
+  width: 350px;
+  border-radius: 50px;
+  box-shadow: 2px 0 15px #04847e48;
+  height: 45px;
+}
+.contractorview-btn {
+  background: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.add_contractor_button_wrapper {
+  margin: 20px;
+}
+
+.add_contractor_button_wrapper button {
+  padding: 15px 23px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #e02c2c;
+  color: whitesmoke;
+  border: none;
+  border-radius: 50px;
+  font-weight: 600;
+}
+.add_payment_button {
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #0dada5;
+  color: whitesmoke;
+  border: none;
+  border-radius: 5px;
+}
+.contractor_delete_button {
+  margin-left: 5px;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: orangered;
+  color: whitesmoke;
+  border: none;
+  border-radius: 5px;
+}
+
+.contractor_form_modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.contractor_form_modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 500px;
+  position: relative;
+}
+
+.contractor_form_close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.contractor_form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contractor_form label {
+  text-align: left;
+  font-weight: bold;
+}
+
+.contractor_form input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contractor_form_submit_button {
+  background: #007bff;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contractor_form_submit_button:hover {
+  background: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .contractor_form_modal-content {
+    width: 95%;
+  }
+}
+
+/* contractor table */
+.contractor_table_container {
+  width: 100%;
+  /* padding: 20px; */
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  overflow-x: auto;
+}
+
+.contractor_table_heading {
+  text-align: center;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.contractor_table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.contractor_table thead {
+  background: #007bff;
+  color: white;
+}
+
+.contractor_table th,
+.contractor_table td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.contractor_table tbody tr:nth-child(even) {
+  background: #f2f2f2;
+}
+
+.contractor_table tbody tr:hover {
+  background: #e0e0e0;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+  .contractor_table th,
+  .contractor_table td {
+    padding: 10px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contractor_table_container {
+    padding: 10px;
+  }
+
+  .contractor_table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .contractor_table th,
+  .contractor_table td {
+    padding: 8px;
+    font-size: 12px;
+  }
+}
+/* contractor card */
+.contractor-container {
+  padding: 20px;
+}
+
+/* Heading */
+.contractor-heading {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Table Styling */
+.contractor_table_container {
+  margin-top: 20px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.table-responsive {
+  overflow-x: auto;
+}
+
+.contractor_table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.contractor_table th,
+.contractor_table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.contractor_table th {
+  background: #007bff;
+  color: white;
+}
+
+.contractor_table tr:nth-child(even) {
+  background: #f9f9f9;
+}
+
+/* Button */
+.view-btn {
+  background: #28a745;
+  color: white;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.view-btn:hover {
+  background: #218838;
+}
+
+/* Popup */
+.contractor_popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.contractor_popup_content {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  /* width: 600px; */
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  animation: popUp 0.3s ease-in-out;
+  line-height: 35px;
+  overflow: auto;
+  height: 550px;
+  scrollbar-width: none;
+}
+.constractorview-btn {
+  background: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contractor_popup_close {
+  font-size: 40px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000000;
+  border-radius: 50px;
+  margin-left: 519px;
+}
+
+.installment_table_wrapper {
+  margin-top: 10px;
+  overflow: auto;
+}
+
+.installment_table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.installment_table th,
+.installment_table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.installment_table th {
+  background: #007bff;
+  color: white;
+}
+
+.no-data {
+  text-align: center;
+  padding: 10px;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .contractor_popup_content {
+    width: 90%;
+  }
+}
+
+/* contractor payment form */
+.contractor_form_wrapper {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 1);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 400px;
+  z-index: 1000;
+}
+
+.contractor_payment_form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  position: relative;
+}
+.contractor_payment_close_button {
+  position: absolute;
+  top: -52px;
+  right: -20px;
+  background: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 50%;
+}
+
+.contractor_payment_close_button:hover {
+  background: darkred;
+}
+
+.contractor_payment_form input,
+.contractor_payment_form select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.contractor_payment_submit_button {
+  background: #28a745;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contractor_payment_submit_button:hover {
+  background: #218838;
+}
+
+/* Background overlay */
+.contractor_form_overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+@media (max-width: 480px) {
+  .contractor_form_wrapper {
+    width: 95%;
+    padding: 15px;
+  }
+  .contractor-container {
+    /* text-align: center; */
+    padding: 0px;
+  }
+  .contractor_popup_close {
+    margin-left: 233px;
+  }
+}
+.add_contractor_button_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 120px;
+  flex-wrap: wrap;
+}
+
+.paymentTableEditForm {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 400px;
+  z-index: 1000;
+}
+
+.paymentTableEditForm button {
+  border: none;
+  background: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.paymentTableEditForm .paymentTableEditForm_submit {
+  /* position: absolute; */
+  top: 10px;
+  right: 15px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #007bff;
+}
+
+.paymentTableEditForm_input,
+.paymentTableEditForm_select {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.paymentTableEditForm_submit {
+  width: 100%;
+  padding: 12px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.paymentTableEditForm_submit:hover {
+  background: #0056b3;
+}
+
+.paymentTableEditForm_overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+@media (max-width: 768px) {
+  .paymentTableEditForm {
+    width: 95%;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .paymentTableEditForm {
+    width: 90%;
+    padding: 10px;
+  }
+}

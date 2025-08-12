@@ -1,0 +1,112 @@
+.nocform {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .nocform h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .nocinput {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .nocbutton {
+    width: 100%;
+    padding: 10px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  .nocbutton:hover {
+    background: #0056b3;
+  }
+  
+  @media (max-width: 768px) {
+    .nocform {
+      width: 90%;
+    }
+  }
+  
+.noc_table_container{
+  overflow: auto;
+}
+
+  .noctable {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+    text-align: left;
+}
+
+.noctable th, .noctable td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.noctable th {
+    background-color: #f4f4f4;
+}
+
+.noctable tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.noctable tr:hover {
+    background-color: #f1f1f1;
+}
+
+.noc_downlode_buttons{
+  display: flex;
+  gap: 10px;
+}
+.noc_downlode_button{
+  height: 40px;
+  width: 120px;
+  font-size: 14px;
+  background-color: cadetblue;
+  color: white;
+  border: none;
+
+}
+.noc_close_button{
+  height: 40px;
+  width: 120px;
+  font-size: 14px;
+  background-color: red;
+  color: white;
+  border: none;
+}
+.noc_view_button{
+  margin-left: 5px;
+  height: 30px;
+  width: 80px;
+  font-size: 14px;
+  background-color: cadetblue;
+  color: white;
+  border: none; 
+}
+.noc_delete_button{
+  height: 30px;
+  width: 80px;
+  font-size: 14px;
+  background-color: red;
+  color: white;
+  border: none; 
+  margin-left: 5px;
+}

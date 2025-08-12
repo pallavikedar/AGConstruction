@@ -1,0 +1,867 @@
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  background: #f8fafc;
+  color: #1e293b;
+  line-height: 1.6;
+}
+
+/* Main Container */
+.flatowner-main-container {
+    min-height: 100vh;
+    /* background: linear-gradient(135deg, #ffffff 0%, #fff8f4 100%); */
+    padding: 2rem;
+}
+/* Header */
+.flatowner-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 2rem 0;
+}
+
+.flatowner-header-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.flatowner-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #120e0c;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.flatowner-title-icon {
+    color: #d85200;
+    font-size: 2.5rem;
+}
+
+.flatowner-subtitle {
+  font-size: 1.125rem;
+  color: #94a3b8;
+  font-weight: 400;
+}
+
+/* Action Bar */
+.flatowner-action-bar {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flatowner-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.875rem 1.5rem;
+  border: none;
+  border-radius: 12px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.flatowner-btn-primary {
+  background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+  color: white;
+}
+
+.flatowner-btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(59, 130, 246, 0.4);
+}
+
+.flatowner-btn-secondary {
+  background: linear-gradient(135deg, #6b7280, #4b5563);
+  color: white;
+}
+
+.flatowner-btn-secondary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(107, 114, 128, 0.4);
+}
+
+.flatowner-btn-success {
+  background: linear-gradient(135deg, #10b981, #059669);
+  color: white;
+}
+
+.flatowner-btn-success:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(16, 185, 129, 0.4);
+}
+
+.flatowner-btn-info {
+  background: linear-gradient(135deg, #06b6d4, #0891b2);
+  color: white;
+}
+
+.flatowner-btn-info:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(6, 182, 212, 0.4);
+}
+
+.flatowner-btn-danger {
+  background: linear-gradient(135deg, #ef4444, #dc2626);
+  color: white;
+}
+
+.flatowner-btn-danger:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(239, 68, 68, 0.4);
+}
+
+/* Customer Card */
+.flatowner-customer-card {
+  background: white;
+  border-radius: 20px;
+  padding: 2rem;
+  margin: 0 auto 2rem;
+  max-width: 1200px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e2e8f0;
+}
+
+.flatowner-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 2px solid #f1f5f9;
+}
+
+.flatowner-flat-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.flatowner-flat-number {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1e293b;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.flatowner-icon {
+    color: #d85200;
+}
+.flatowner-edit-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: #f8fafc;
+  color: #475569;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.flatowner-edit-btn:hover {
+  background: #3b82f6;
+  color: white;
+  border-color: #3b82f6;
+}
+
+.flatowner-customer-name {
+  text-align: right;
+}
+
+.flatowner-customer-name h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 0.25rem;
+}
+
+.flatowner-customer-name p {
+  font-size: 1rem;
+  color: #64748b;
+  font-weight: 500;
+}
+
+/* Details Grid */
+.flatowner-details-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+}
+
+.flatowner-info-section {
+  background: #f8fafc;
+  border-radius: 16px;
+  padding: 1.5rem;
+  border: 1px solid #e2e8f0;
+}
+
+.flatowner-section-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+.flatowner-section-icon {
+    color: #d85200;
+    font-size: 1.25rem;
+}
+
+.flatowner-info-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.flatowner-info-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem;
+  background: white;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+  transition: all 0.2s ease;
+}
+
+.flatowner-info-item:hover {
+  border-color: #3b82f6;
+  box-shadow: 0 2px 8px rgba(59, 130, 246, 0.1);
+}
+
+.flatowner-item-icon {
+    color: #d85200;
+    font-size: 1rem;
+    flex-shrink: 0;
+}
+
+.flatowner-label {
+  font-weight: 600;
+  color: #475569;
+  min-width: 80px;
+}
+
+.flatowner-value {
+  color: #1e293b;
+  font-weight: 500;
+  flex: 1;
+}
+
+/* Loading State */
+.flatowner-loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem;
+  color: white;
+}
+
+.flatowner-spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid #374151;
+  border-top: 4px solid #3b82f6;
+  border-radius: 50%;
+  animation: flatowner-spin 1s linear infinite;
+  margin-bottom: 1rem;
+}
+
+@keyframes flatowner-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Modal Styles */
+.flatowner-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+  padding: 1rem;
+}
+
+.flatowner-modal {
+  background: white;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 500px;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.25);
+  scrollbar-width: none;
+}
+
+.flatowner-modal-large {
+  max-width: 900px;
+}
+
+.flatowner-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  border-bottom: 1px solid #e2e8f0;
+  background: #f8fafc;
+  border-radius: 20px 20px 0 0;
+}
+
+.flatowner-modal-header h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1e293b;
+}
+
+.flatowner-header-actions {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.flatowner-close-btn {
+  width: 40px;
+  height: 40px;
+  background: #f1f5f9;
+  color: #64748b;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.25rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.flatowner-close-btn:hover {
+  background: #e2e8f0;
+  color: #475569;
+}
+
+/* Form Styles */
+.flatowner-form {
+  padding: 2rem;
+}
+
+.flatowner-form-section {
+  margin-bottom: 2rem;
+}
+
+.flatowner-form-section h4 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+.flatowner-form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.flatowner-form-group {
+  margin-bottom: 1.5rem;
+}
+
+.flatowner-form-group-full {
+  grid-column: 1 / -1;
+}
+
+.flatowner-form-group label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 0.5rem;
+}
+
+.flatowner-input,
+.flatowner-select,
+.flatowner-textarea {
+  width: 100%;
+  padding: 0.875rem;
+  border: 2px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+  background: white;
+}
+
+.flatowner-input:focus,
+.flatowner-select:focus,
+.flatowner-textarea:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.flatowner-textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.flatowner-form-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+  justify-content: flex-end;
+}
+
+/* Installment Content */
+.flatowner-installment-content {
+  padding: 2rem;
+}
+
+.flatowner-residency-details {
+  background: #f8fafc;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border: 1px solid #e2e8f0;
+}
+
+.flatowner-residency-details h4 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 1rem;
+}
+
+.flatowner-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.flatowner-summary-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem;
+  background: white;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+}
+
+.flatowner-summary-label {
+  font-weight: 600;
+  color: #64748b;
+}
+
+.flatowner-summary-value {
+  font-weight: 700;
+  color: #1e293b;
+}
+
+/* Table Styles */
+.flatowner-table-container {
+  overflow-x: auto;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+}
+
+.flatowner-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+}
+
+.flatowner-table th,
+.flatowner-table td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.flatowner-table th {
+  background: #f8fafc;
+  font-weight: 600;
+  color: #374151;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.flatowner-table td {
+  color: #1e293b;
+}
+
+.flatowner-table tr:hover {
+  background: #f8fafc;
+}
+
+.flatowner-payment-method {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  background: #dbeafe;
+  color: #1e40af;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.flatowner-action-column {
+  width: 120px;
+}
+
+.flatowner-action-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin: 0 0.25rem;
+}
+
+.flatowner-btn-edit {
+  background: #dbeafe;
+  color: #1e40af;
+}
+
+.flatowner-btn-edit:hover {
+  background: #bfdbfe;
+  transform: scale(1.1);
+}
+
+.flatowner-btn-delete {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+.flatowner-btn-delete:hover {
+  background: #fecaca;
+  transform: scale(1.1);
+}
+
+/* Customer Slip Styles */
+.flatowner-slip-content {
+  padding: 2rem;
+  background: white;
+  font-family: Arial, sans-serif;
+}
+
+.flatowner-slip-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 3px solid #10b981;
+}
+
+.flatowner-slip-header h2 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 0.5rem;
+}
+
+.flatowner-slip-header p {
+  font-size: 0.875rem;
+  color: #64748b;
+  margin-bottom: 0.25rem;
+}
+
+.flatowner-slip-body {
+  margin-top: 1rem;
+}
+
+.flatowner-slip-details {
+  margin: 1.5rem 0;
+}
+
+.flatowner-slip-table {
+  width: 100%;
+  max-width: 400px;
+  border-collapse: collapse;
+  border: 1px solid #6b7280;
+}
+
+.flatowner-slip-table td {
+  border: 1px solid #6b7280;
+  padding: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.flatowner-slip-text {
+  margin: 1.5rem 0;
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.flatowner-slip-amount {
+  border: 2px solid #1e293b;
+  border-radius: 25px;
+  padding: 0.5rem 1rem;
+  display: inline-block;
+  margin: 1rem 0;
+}
+
+.flatowner-slip-signatures {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e2e8f0;
+  font-weight: 600;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .flatowner-main-container {
+    padding: 1rem;
+  }
+
+  .flatowner-title {
+    font-size: 2rem;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .flatowner-title-icon {
+    font-size: 2rem;
+  }
+
+  .flatowner-action-bar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .flatowner-btn {
+    justify-content: center;
+  }
+
+  .flatowner-customer-card {
+    padding: 1.5rem;
+  }
+
+  .flatowner-card-header {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .flatowner-flat-info {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .flatowner-customer-name {
+    text-align: center;
+  }
+
+  .flatowner-details-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .flatowner-form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .flatowner-form-actions {
+    flex-direction: column;
+  }
+
+  .flatowner-summary-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .flatowner-modal {
+    margin: 0.5rem;
+    max-height: 95vh;
+  }
+
+  .flatowner-modal-header {
+    padding: 1rem 1.5rem;
+  }
+
+  .flatowner-form {
+    padding: 1.5rem;
+  }
+
+  .flatowner-table-container {
+    font-size: 0.875rem;
+  }
+
+  .flatowner-table th,
+  .flatowner-table td {
+    padding: 0.75rem 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .flatowner-title {
+    font-size: 1.75rem;
+  }
+
+  .flatowner-subtitle {
+    font-size: 1rem;
+  }
+
+  .flatowner-customer-card {
+    padding: 1rem;
+  }
+
+  .flatowner-info-section {
+    padding: 1rem;
+  }
+
+  .flatowner-info-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .flatowner-label {
+    min-width: auto;
+  }
+
+  .flatowner-modal {
+    margin: 0.25rem;
+  }
+
+  .flatowner-form {
+    padding: 1rem;
+  }
+
+  .flatowner-slip-content {
+    padding: 1rem;
+  }
+
+  .flatowner-slip-header h2 {
+    font-size: 1.5rem;
+  }
+
+  .flatowner-slip-signatures {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+}
+
+/* Animation Classes */
+@keyframes flatowner-fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.flatowner-customer-card {
+  animation: flatowner-fadeIn 0.6s ease-out;
+}
+
+.flatowner-info-section {
+  animation: flatowner-fadeIn 0.6s ease-out;
+}
+
+.flatowner-info-section:nth-child(2) {
+  animation-delay: 0.1s;
+}
+
+.flatowner-info-section:nth-child(3) {
+  animation-delay: 0.2s;
+}
+
+/* Accessibility */
+.flatowner-input:focus,
+.flatowner-select:focus,
+.flatowner-textarea:focus {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}
+
+button:focus-visible {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}
+
+/* Print Styles */
+@media print {
+  .flatowner-action-bar,
+  .flatowner-modal-header,
+  .flatowner-action-btn,
+  .flatowner-edit-btn {
+    display: none;
+  }
+
+  .flatowner-customer-card {
+    box-shadow: none;
+    border: 1px solid #e2e8f0;
+  }
+
+  .flatowner-slip-content {
+    padding: 0;
+  }
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+  .flatowner-main-container {
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  }
+}
+
+/* High Contrast Mode */
+@media (prefers-contrast: high) {
+  .flatowner-btn {
+    border: 2px solid currentColor;
+  }
+
+  .flatowner-info-item {
+    border: 2px solid #1e293b;
+  }
+}

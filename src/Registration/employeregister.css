@@ -1,0 +1,127 @@
+.employee-form-container {
+  width: 100%;
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #ffffff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  text-align: center;
+}
+
+.employee-form h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555;
+}
+
+.employee-form input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 10px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.submit-btn:hover {
+  background: #0056b3;
+}
+
+.employee_table_container {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+}
+
+.employee_table_container h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.employee_table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.employee_table th,
+.employee_table td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.employee_table th {
+  background-color: #007bff;
+  color: white;
+}
+
+.employee_table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.employee_table tr:hover {
+  background-color: #ddd;
+}
+
+.employe_delete_btn {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.employe_delete_btn:hover {
+  background-color: darkred;
+}
+
+@media screen and (max-width: 768px) {
+  .employee_table {
+    display: block;
+    width: 100%;
+    overflow: auto;
+  }
+
+  .employee_table tr {
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ddd;
+  }
+
+  .employee_table td {
+    /* padding-left: 100%; */
+    position: relative;
+    text-align: right;
+  }
+
+  .employe_delete_btn {
+    width: 100%;
+  }
+}
