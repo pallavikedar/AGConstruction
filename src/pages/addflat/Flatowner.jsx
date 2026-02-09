@@ -213,6 +213,7 @@ function Flatowner() {
       setselectinstallmentType("");
       setNote("");
       setRefreshKey(refreshKey + 1);
+      setIsSubmitting(false);
     } catch (error) {
       console.log(error);
       setIsSubmitting(false);
@@ -839,7 +840,7 @@ function Flatowner() {
                 >
                   <option value="">Select Payment Method</option>
                   <option value="CASH">Cash</option>
-                  <option value="CHECK">Cheque</option>
+                  <option value="CHEQUE">Cheque</option>
                   <option value="UPI">UPI</option>
                   <option value="RTGS">RTGS</option>
                   <option value="NEFT">NEFT</option>
